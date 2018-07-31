@@ -8,7 +8,7 @@ class UsersController < ApplicationController
         if @user.valid?
           redirect_to "/users/#{@user.username}"
         else
-
+            redirect_to "/error"
          
         end
     end

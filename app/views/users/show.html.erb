@@ -1,4 +1,4 @@
 <p>
-      Bienvenu <%=params[:user_username]%> :
-      voici ta bio <%=params[:user_bio]%>
+      Bienvenu <%=User.find(username:params[:user_username]).username%> :
+      voici ta bio <%=User.find(username:params[:user_username]).bio%>
     </p>

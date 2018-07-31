@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root to: 'users#home', as:'home'
   get'/users', to:'users#new', as: 'account'
   post'/users', to:'users#create'
-  get '/users/:id', to:'users#show'
+  get '/users/:name', to:'users#show'
 end

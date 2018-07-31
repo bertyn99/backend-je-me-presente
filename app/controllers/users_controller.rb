@@ -4,15 +4,18 @@ class UsersController < ApplicationController
     def new
     end
     def create
-        puts params
-        @post=User.new
-        @post.username=params[:user_username]
-        @post.bio=params[:user_bio]
-        @post.save
-        redirect_to "/users/#{@user.username}"
+        @user = User.create(username: params['username'].capitalize, bio: params['bio'])
+        if @user.valid?
+          redirect_to "/users/#{@user.username}"
+        else
+          redirect_to "/error"
+        end
     end
     def show
       
            
     end
+    def error
+    end
+    
 end

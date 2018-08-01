@@ -1,24 +1,14 @@
-# README
+# Nous sommes le groupe THP de Nantes et voici le dernier exercice des formulaires avec rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Une fois le repository cloné, lancer un bundle install avec
+```
+bundle install --without production
+```
 
-Things you may want to cover:
+Ensuite vous pouvez faire vos tests sur le serveur directement :
+rails db:migrate
+rails server
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Le lien vers l'application heroku :
+https://warm-anchorage-19198.herokuapp.com/

@@ -6,6 +6,8 @@ bundle install --without production
 ```
 
 Ensuite vous pouvez faire vos tests sur le serveur directement :
+
+```
 rails db:migrate
 rails server
 ```
